@@ -1,8 +1,10 @@
+import './index.css';
+
 function Footer() {
     return (
       <>
         
-        <footer>Footer</footer>
+        <footer className="grid-container center-content">Footer</footer>
       </>
     );
   }

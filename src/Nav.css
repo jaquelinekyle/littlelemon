@@ -1,0 +1,58 @@
+/* General header styles */
+.nav-header {
+    display: flex;
+    justify-content: center; /* Center the entire navbar */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px; /* Add some padding for better spacing */
+    background-color: white;
+    border-bottom: 2px solid #f0f0f0; /* Optional: Adds a subtle divider line */
+  }
+  
+  /* Logo container */
+  .logo-container {
+    margin-left: auto; /* Push the logo to the left */
+    padding-right: 30px;
+  }
+  
+  .logo {
+    height: 50px; /* Adjust logo height */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Navigation container */
+  .nav-container {
+    margin-right: auto; /* Push the navigation menu to the right */
+  }
+  
+  .nav-list {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Horizontal layout */
+    gap: 30px; /* Space between items */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li a {
+    text-decoration: none; /* Remove underline */
+    color: #485E57  ; /* Neutral color */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .nav-list li a:hover {
+    color: #F4CE14; /* Optional: Add hover effect */
+  }
+  
+  /* Center content for smaller screens */
+  @media (max-width: 768px) {
+    .nav-header {
+      flex-direction: column; /* Stack logo and nav vertically */
+    }
+  
+    .nav-list {
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: center;
+      gap: 15px; /* Adjust spacing for smaller screens */
+    }
+  }
+  

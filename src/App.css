@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #eff0f1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,20 +37,5 @@
   }
 }
 
-.nav-list {
-  list-style-type: none; /* Remove bullets */
-  display: flex; /* Horizontal layout */
-  gap: 20px; /* Space between items */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
 
-.nav-list li a {
-  text-decoration: none; /* Remove underline */
-  color: black; /* Change color as needed */
-  font-weight: bold;
-}
 
-.nav-list li a:hover {
-  color: #ff6347; /* Optional: Add hover effect */
-}
