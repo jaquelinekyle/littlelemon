@@ -1,6 +1,5 @@
 import './index.css';
 import './App.css';
-import Footer from './Footer';
 import Main from './Main';
 import Nav from './Nav';
 import Header from './Header';
@@ -11,7 +10,6 @@ function App() {
       <Header />
       <Nav />
       <Main />
-      <Footer />
     </>
   );
 }
