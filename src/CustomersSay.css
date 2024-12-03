@@ -1,0 +1,94 @@
+/* Section styling */
+.testimonials {
+    padding: 50px 170px;
+    background-color: #485E57; /* Light gray background */
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #F4CE14;
+  }
+  
+  /* Grid setup */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px; /* Spacing between cards */
+  }
+  
+  /* Review card styling */
+  .review-card {
+    grid-column: span 2; /* Each card spans 2 columns */
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Rating styling */
+  .review-card .rating {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffd700; /* Gold color */
+  }
+  
+  /* User information */
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  
+  .user-name {
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* Review text */
+  .review-text {
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin-top: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(6, 1fr); /* 6 columns for medium screens */
+    }
+  
+    .review-card {
+      grid-column: span 3; /* Cards span half the grid */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(1, 1fr); /* Single-column layout */
+    }
+  
+    .review-card {
+      grid-column: auto; /* Default width for small screens */
+    }
+  }
+  

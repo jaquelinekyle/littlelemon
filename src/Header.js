@@ -4,7 +4,7 @@ import './index.css';
 function Header() {
     return (
       <>
-        <header className="header">Header</header>
+        <header className="header"></header>
        
       </>
     );

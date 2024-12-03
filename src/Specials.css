@@ -1,0 +1,115 @@
+.specials {
+  padding: 50px 170px;
+  background-color: #ffffff; /* White background */
+  text-align: left;
+  
+}
+
+.specials h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+  font-weight: 700; /* Bold */
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.specials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px; /* Space between grid items */
+  width: 100%; /* Full-width grid */
+  margin: 0 auto; /* Center the grid */
+}
+
+.special-card {
+  grid-column: span 3; /* Each card spans 3 columns */
+  background-color: rgba(0, 0, 0, 0.05); /* Light gray background */
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.special-card img {
+  width: 100%; /* Ensure the image spans the full width of the container */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Crop the image to fill the area without distortion */
+  border-radius: 16px; /* Maintain rounded corners */
+  margin-bottom: 15px;
+}
+
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.special-card h3 {
+  font-family: 'Markazi Text', serif;
+  font-size: 20px;
+  font-weight: 700; /* Bold */
+  color: #333333;
+  margin: 0; /* Remove default margin */
+}
+.card-title-price {
+  display: flex;
+  justify-content: space-between; /* Align title and price to opposite sides */
+  align-items: center; /* Align them vertically */
+  margin-bottom: 10px; /* Add spacing below the title-price row */
+  color: #e76f51;
+}
+
+.card-footer .price {
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  font-weight: 800; /* Extra-Bold */
+  color: #e76f51;
+  margin: 0; /* Remove margin */
+}
+
+.card-footer button {
+  background-color: #f4ce14;
+  color: #333333;
+  font-family: 'Karla', sans-serif;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-footer button:hover {
+  background-color: #dda60f;
+}
+
+
+@media (max-width: 768px) {
+  .specials {
+    padding: 10px 20px;
+  }
+  .specials-grid {
+    grid-template-columns: repeat(6, 1fr); /* 6 columns for medium screens */
+    gap: 15px;
+  }
+
+  .special-card {
+    grid-column: span 6; /* Each card spans full width in 6-column layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .specials-grid {
+    grid-template-columns: 1fr; /* Single-column layout for small screens */
+    gap: 10px;
+  }
+
+  .special-card {
+    grid-column: auto; /* Default column placement */
+  }
+}

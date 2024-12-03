@@ -1,8 +1,16 @@
 import './index.css';
+import CalltoAction from './CalltoAction';
+import Specials from './Specials';
+import CustomersSay from './CustomersSay';
+import AboutSection from './About'
 
 function HomePage() {
     return (
         <>
+        <CalltoAction />
+        <Specials />
+        <CustomersSay />
+        <AboutSection />
         <div className="grid-container">
           <div className="col-span-12 center-content">
             <h1>Welcome to Little Lemon (Header)</h1>
@@ -15,6 +23,7 @@ function HomePage() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
+        
       </>
     );
   }
