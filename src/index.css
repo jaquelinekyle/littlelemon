@@ -274,10 +274,15 @@ img {
 /* Section styling */
 .about-section {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* 12 columns */
-  gap: 20px;
-  padding: 50px 70px;
-  align-items: start; /* Align items to the top */
+  grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+  gap: 20px; /* Gutter between columns */
+  margin: 0 auto; /* Automatically center the grid container */
+  padding: 0 70px; /* Add padding inside the container */
+  padding-bottom: 5%;
+  max-width: 1200px; /* Optional: Limit the width of the container */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  box-sizing: border-box; /* Include padding and border in element's total width */
   background-color: #f4f4f4; /* Light background */
 }
 
