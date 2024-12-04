@@ -377,3 +377,93 @@ img {
     margin-bottom: 20px;
   }
 }
+
+/* Footer container */
+.footer {
+  background-color: #333333; /* Dark background */
+  color: #ffffff;
+  padding: 40px 70px; /* Space inside the footer */
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+  gap: 20px; /* Space between grid items */
+  align-items: start; /* Align items to the top */
+}
+
+/* Logo Section */
+.footer-logo {
+  grid-column: span 3; /* Take up 3 columns */
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  align-items: center; /* Center vertically */
+}
+
+.footer-logo img {
+  max-width: 75%; /* Ensure image scales properly */
+  height: auto; /* Maintain aspect ratio */
+  padding-top: 50px;
+}
+
+/* Doormat Navigation */
+.footer-column {
+  grid-column: span 3; /* Each column spans 3 grid columns */
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #F4CE14; /* Highlighted color */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.footer-column ul,
+.footer-column p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px; /* Space between items */
+}
+
+.footer-column a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr); /* Shrink to 6 columns */
+  }
+
+  .footer-logo {
+    grid-column: span 6; /* Full width for logo */
+    justify-content: center; /* Center align */
+    margin-bottom: 20px; /* Add space below the logo */
+  }
+
+  .footer-column {
+    grid-column: span 6; /* Columns span full width */
+    text-align: center; /* Center-align text */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .footer-column {
+    grid-column: auto; /* Default width */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Add space below each column */
+  }
+}
