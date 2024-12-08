@@ -117,13 +117,6 @@ code {
   }
 }
 
-@media (max-width: 900px){
-  .full-width-rectangle img {
-  position: fixed; 
-  margin-top: 20px;
-  margin-bottom: 0px; 
-  }
-}
 
 @media (max-width: 450px) {
   .grid-container {
@@ -244,10 +237,13 @@ img {
   color: #f4ce14; 
   margin: 0px 0; 
 }
+.chicago button{
+  color: #485E57;
+}
 
 .full-width-rectangle p {
   font-family: 'Karla', sans-serif;
-  font-size: 16px;
+  font-size: 1.2em;
   color: #EDEFEE; 
   margin: 20px 0;
   line-height: 1.6; 
@@ -444,7 +440,7 @@ img {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px){
   .footer-grid {
     grid-template-columns: repeat(6, 1fr); /* Shrink to 6 columns */
   }
@@ -459,9 +455,17 @@ img {
     grid-column: span 6; /* Columns span full width */
     text-align: center; /* Center-align text */
   }
-}
 
-@media (max-width: 480px) {
+  .full-width-rectangle {
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 8px; 
+  }
+
+  .full-width-rectangle img{
+    display: none;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr; /* Single column layout */
   }
@@ -470,5 +474,9 @@ img {
     grid-column: auto; /* Default width */
     text-align: left; /* Align text to the left */
     margin-bottom: 20px; /* Add space below each column */
+  }
+
+  .about-images {
+    display: none;
   }
 }
