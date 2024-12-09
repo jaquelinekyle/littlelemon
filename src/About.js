@@ -5,7 +5,7 @@ function AboutSection() {
     <div className="about-section">
       {/* Text Content */}
       <div className="about-text">
-        <h1 color='yellow'>Little Lemon</h1>
+        <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.

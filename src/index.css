@@ -282,6 +282,17 @@ img {
   background-color: #f4f4f4; /* Light background */
 }
 
+.btn input{
+  padding: 12px 16px;
+  margin-top: 20px;
+  background: #f4ce14;
+  color: #485E57;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+
+}
+
 /* Text content */
 .about-text {
   grid-column: span 5; /* Spans 5 columns */

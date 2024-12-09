@@ -1,13 +1,25 @@
 import React, { useState } from 'react';
-import './index.css';
+import './Booking.css';
 
 function BookingForm({ availableTimes, dispatch }) {
   const [selectedDate, setSelectedDate] = useState('');
+  const [guests, setGuests]  = useState('');
+  const [occasion, setOccasion] = useState('');
 
   const handleDateChange = (e) => {
     const newDate = e.target.value;
     setSelectedDate(newDate);
     dispatch({ type: 'UPDATE', date: newDate }); // Fetch available times for the selected date
+  };
+
+  const handleGuestChange = (e) => {
+    const guests = e.target.value;
+    setGuests(guests);
+  };
+
+  const handleOccasionChange = (e) => {
+    const occasion = e.target.value;
+    setOccasion(occasion);
   };
 
   return (
@@ -16,17 +28,10 @@ function BookingForm({ availableTimes, dispatch }) {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '1%',
         paddingBottom: '5%',
       }}
     >
-      <form
-        style={{
-          display: 'grid',
-          maxWidth: '300px',
-          gap: '5px',
-        }}
-      >
+      <form>
         <label htmlFor="res-date">Choose date</label>
       <input
         type="date"
@@ -45,16 +50,17 @@ function BookingForm({ availableTimes, dispatch }) {
       </select>
 
       <label htmlFor="guests">Number of guests</label>
-      <input type="number" id="guests" min="1" max="10" />
-
+      <input type="number" id="guests" min="1" max="10" onChange={handleGuestChange}/>
+        
       <label htmlFor="occasion">Occasion</label>
-      <select id="occasion">
+      <select id="occasion" onChange={handleOccasionChange}>
       <option></option>
         <option>Birthday</option>
         <option>Anniversary</option>
       </select>
-
+        <div className='btn'>
       <input type="submit" value="Make Your Reservation" />
+      </div>
     </form>
     </div>
   );

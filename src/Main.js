@@ -23,7 +23,7 @@ const initializeTimes = () => {
 
 function fetchAPI(date) {
   console.log('Fetching available times for:', date);
-  return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']; // Mocked response
+  return ['5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM', '10:00 PM']; 
 }
 
 function Main() {
