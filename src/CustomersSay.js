@@ -9,7 +9,7 @@ function CustomersSay() {
     <div class="review-card">
       <div class="rating">⭐⭐⭐⭐⭐</div>
       <div class="user-info">
-        <img src="user1.jpg" alt="User Profile" class="user-photo" />
+        <img class="user-photo" src="avatar1.png" alt="User Profile" />
         <p class="user-name">John Doe</p>
       </div>
       <p class="review-text">
@@ -19,7 +19,7 @@ function CustomersSay() {
     <div class="review-card">
       <div class="rating">⭐⭐⭐⭐</div>
       <div class="user-info">
-        <img src="user2.jpg" alt="User Profile" class="user-photo" />
+        <img src="avatar2.png" alt="User Profile" class="user-photo" />
         <p class="user-name">Jane Smith</p>
       </div>
       <p class="review-text">
@@ -29,7 +29,7 @@ function CustomersSay() {
     <div class="review-card">
       <div class="rating">⭐⭐⭐⭐⭐</div>
       <div class="user-info">
-        <img src="user3.jpg" alt="User Profile" class="user-photo" />
+        <img src="avatar3.png" alt="User Profile" class="user-photo" />
         <p class="user-name">Sam Wilson</p>
       </div>
       <p class="review-text">
@@ -39,7 +39,7 @@ function CustomersSay() {
     <div class="review-card">
       <div class="rating">⭐⭐⭐⭐⭐</div>
       <div class="user-info">
-        <img src="user3.jpg" alt="User Profile" class="user-photo" />
+        <img src="avatar4.png" alt="User Profile" class="user-photo" />
         <p class="user-name">Anonymous Programmer</p>
       </div>
       <p class="review-text">

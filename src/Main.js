@@ -1,11 +1,11 @@
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React, { useReducer } from 'react';
+import React, { useState, useReducer } from 'react';
 import BookingPage from './BookingPage';
 import HomePage from './HomePage';
 import Footer from './Footer';
+import ConfirmedBooking from './ConfirmedBooking';
 
-// Reducer function for managing available times
 const updateTimes = (state, action) => {
   switch (action.type) {
     case 'UPDATE':
@@ -14,7 +14,6 @@ const updateTimes = (state, action) => {
       return state;
   }
 };
-
 
 // Initialize available times (empty at the start)
 const initializeTimes = () => {
@@ -28,6 +27,18 @@ function fetchAPI(date) {
 
 function Main() {
   const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
+  const [selectedDate, setSelectedDate] = useState('');
+  const [guests, setGuests] = useState('');
+  const [occasion, setOccasion] = useState('');
+  const [selectedTime, setSelectedTime] = useState('');
+
+
+
+  console.log("Main Component State:");
+  console.log("Selected date:", selectedDate);
+  console.log("Guests:", guests);
+  console.log("Occasion:", occasion);
+  console.log("Time", selectedTime); 
 
 
   return (
@@ -36,7 +47,27 @@ function Main() {
         <Route path="/" element={<HomePage />} />
         <Route
           path="/booking"
-          element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} />}
+          element={
+            <BookingPage
+              availableTimes={availableTimes}
+              dispatch={dispatch}
+              setSelectedDate={setSelectedDate}
+              setGuests={setGuests}
+              setOccasion={setOccasion}
+              setSelectedTime={setSelectedTime}
+            />
+          }
+        />
+        <Route
+          path="/confirmed"
+          element={
+            <ConfirmedBooking
+              selectedDate={selectedDate}
+              guests={guests}
+              occasion={occasion}
+              selectedTime={selectedTime}
+            />
+          }
         />
       </Routes>
       <Footer />

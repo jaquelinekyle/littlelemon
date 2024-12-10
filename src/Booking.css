@@ -24,8 +24,8 @@ form {
   .btn input{
     padding: 12px 16px;
     margin-top: 20px;
-    background: #f4ce14;
-    color: #485E57;
+    background-color: #485E57;
+    color: #f4ce14;
     font-weight: 700;
     border: none;
     border-radius: 4px;
@@ -33,13 +33,38 @@ form {
   }
 
   .btn input[type="submit"]:hover {
-    background-color: #485E57;
-    color: #f4ce14;
+    background: #f4ce14;
+    color: #485E57;
   }
 
   h1 {
     font-family: 'Markazi Text', serif;
     font-size: 64px;
     font-weight: 500; /* Medium */
+    color: #485E57
+  }
+
+  .confirmation-box h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 40px;
+    font-weight: 500; /* Medium */
+    color: #485E57
+  }
+
+  .confirmation-box {
+    display: grid;
+    max-width: 40%;
+    gap: 10px; /* Larger gap between label/input groups */
+    background-color: #EDEFEE;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .confirmation-box h3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 800; /* Extra-Bold */
     color: #485E57
   }

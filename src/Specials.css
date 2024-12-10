@@ -4,6 +4,28 @@
   text-align: left;
   
 }
+.specials-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.specials-header button {
+  padding: 12px 16px;
+  margin-top: 20px;
+  background-color: #f4ce14;
+  color: #333333;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+
+}
+
+.btn :hover {
+  background: #f4ce14;
+  color: #485E57;
+}
 
 .specials h2 {
   font-family: 'Markazi Text', serif;

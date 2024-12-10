@@ -73,6 +73,11 @@
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
+    .testimonials {
+      padding: 20px 20px;
+      background-color: #485E57; /* Light gray background */
+      text-align: center;
+    }
     .testimonials-grid {
       grid-template-columns: repeat(6, 1fr); /* 6 columns for medium screens */
     }

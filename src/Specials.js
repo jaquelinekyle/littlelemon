@@ -3,7 +3,10 @@ import './Specials.css';
 function Specials() {
   return (
     <section className="specials">
+    <div className='specials-header'>
       <h2>Specials</h2>
+      <button>Order Now</button>
+      </div>
       <div className="specials-grid">
         <div className="special-card">
           <img src="/greek-salad.jpg" alt="Greek Salad" />
